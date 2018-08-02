@@ -15,7 +15,7 @@
     ],
 
     "require": {
-        "mortezanasiri/moritiza": "dev-master",
+        "mortezanasiri/moritiza": "dev-master@dev",
         "php": "^7.0.0",
         "symfony/http-foundation": "^4.0",
         "symfony/var-dumper": "^4.0",
@@ -39,5 +39,12 @@
             "App\\": "app/",
             "Core\\": "core/"
         }
-    }
+    },
+
+    "repositories": [
+        {
+           "type": "vcs",
+           "url": "https://github.com/mortezanasiri/MoriTiza" 
+        }
+    ]
 }

@@ -1,5 +1,21 @@
 {
+    "name": "mortezanasiri/MoriTiza",
+    "description": "PHP Micro Framework",
+    "keywords": ["framework", "MoriTiza"],
+    "homepage": "https://github.com/mortezanasiri/MoriTiza",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Morteza Nasiri",
+            "email": "n.mortezapc@gmail.com",
+            "homepage": "https://mortezanasiri.github.io",
+            "role": "Developer"
+        }
+    ],
+
     "require": {
+        "php": "^7.0.0",
         "symfony/http-foundation": "^4.0",
         "symfony/var-dumper": "^4.0",
         "twig/twig": "^2.0",

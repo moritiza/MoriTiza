@@ -1,0 +1,20 @@
+{% extends 'main.twig' %}
+
+{% block title %}403 Forbidden - MoriTiza PHP Micro Framework{% endblock %}
+
+{% block customStyles %}
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="{{ asset('css/error-pages.css') }}">
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="row vertical-center">
+			<div class="col-md-12">
+				<h1>Forbidden! <i class="fas fa-ban"></i></h1>
+				<h3>403 Access Denied</h2>
+				<h6>You don't have permission to access this page.</h6>
+			</div>
+		</div>
+	</div>
+{% endblock %}

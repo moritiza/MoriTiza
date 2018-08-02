@@ -1,3 +1,0 @@
-#!/usr/bin/env php
-<?php
-require_once './core/Libraries/Moritiza.php';

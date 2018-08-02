@@ -1,0 +1,24 @@
+{% extends 'main.twig' %}
+
+{% block title %}Sign up - MoriTiza PHP Micro Framework{% endblock %}
+
+{% block customStyles %}
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="{{ asset('css/signup.css') }}">
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<form class="form-signup" accept-charset="UTF-8" role="form" action="signup" method="post">
+			<h2 class="form-signup-heading">Sign up</h2>
+			<label for="name" class="sr-only">Full Name</label>
+	        <input type="test" name="name" id="name" class="form-control" placeholder="Full Name" required autofocus>
+			<label for="email" class="sr-only">Email Address</label>
+	        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+	        <label for="password" class="sr-only">Password</label>
+	        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+        	<button class="btn btn-lg btn-success btn-block" type="submit">Sign up</button>
+        	<h5 class="text-center">Have an account? <a href="signin">Sign in</a></h5>
+		</form>
+	</div>
+{% endblock %}

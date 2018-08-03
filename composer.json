@@ -15,6 +15,7 @@
     ],
 
     "require": {
+        "mortezanasiri/moritiza" : "v0.1-beta",
         "php": "^7.0.0",
         "symfony/http-foundation": "^4.0",
         "symfony/var-dumper": "^4.0",

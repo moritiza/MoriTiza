@@ -15,7 +15,7 @@ class Bootstrap
         
         $dotenv = new \Dotenv\Dotenv(dirname(__DIR__));
         $dotenv->load();
-
+        
         if (getenv('APP_DEBUG') === 'true') {
             ini_set('display_errors', 1);
             ini_set('display_startup_errors', 1);

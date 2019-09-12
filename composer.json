@@ -20,7 +20,7 @@
         "symfony/var-dumper": "^4.0",
         "twig/twig": "^2.0",
         "symfony/console": "^4.1",
-        "vlucas/phpdotenv": "^2.5",
+        "vlucas/phpdotenv": "^3.6",
         "swiftmailer/swiftmailer": "^6.0",
         "monolog/monolog": "^1.23",
         "nesbot/carbon": "^1.32",

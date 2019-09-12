@@ -13,7 +13,7 @@ class Bootstrap
 		require_once __DIR__ . '/Config/config.php';
         require_once __DIR__ . '/Helpers/functions.php';
         
-        $dotenv = new \Dotenv\Dotenv(dirname(__DIR__));
+        $dotenv = \Dotenv\Dotenv::create(dirname(__DIR__));
         $dotenv->load();
         
         if (getenv('APP_DEBUG') === 'true') {

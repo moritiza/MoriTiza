@@ -22,7 +22,7 @@ class Bootstrap
             error_reporting(E_ALL);
 
             $whoops = new \Whoops\Run;
-            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            $whoops->prependHandler(new \Whoops\Handler\PrettyPageHandler);
             $whoops->register();
         } elseif (getenv('APP_DEBUG') === 'false') {
             ini_set('display_errors', 0);

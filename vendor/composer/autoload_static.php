@@ -77,6 +77,7 @@ class ComposerStaticInita702c8b84fcdcfb275704456408e7225
         'C' => 
         array (
             'Core\\' => 5,
+            'Carbon\\' => 7,
         ),
         'A' => 
         array (
@@ -201,24 +202,17 @@ class ComposerStaticInita702c8b84fcdcfb275704456408e7225
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
-    );
-
     public static $prefixesPsr0 = array (
-        'U' => 
-        array (
-            'UpdateHelper\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
-            ),
-        ),
         'T' => 
         array (
             'Twig_' => 
@@ -247,7 +241,6 @@ class ComposerStaticInita702c8b84fcdcfb275704456408e7225
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita702c8b84fcdcfb275704456408e7225::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita702c8b84fcdcfb275704456408e7225::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInita702c8b84fcdcfb275704456408e7225::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInita702c8b84fcdcfb275704456408e7225::$prefixesPsr0;
             $loader->classMap = ComposerStaticInita702c8b84fcdcfb275704456408e7225::$classMap;
 

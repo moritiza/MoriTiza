@@ -6,5 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'PHP_Timer' => $vendorDir . '/phpunit/php-timer/src/Timer.php',
+    'SebastianBergmann\\Timer\\Exception' => $vendorDir . '/phpunit/php-timer/src/Exception.php',
+    'SebastianBergmann\\Timer\\RuntimeException' => $vendorDir . '/phpunit/php-timer/src/RuntimeException.php',
+    'SebastianBergmann\\Timer\\Timer' => $vendorDir . '/phpunit/php-timer/src/Timer.php',
 );

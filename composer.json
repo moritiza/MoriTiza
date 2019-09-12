@@ -22,7 +22,7 @@
         "symfony/console": "^4.1",
         "vlucas/phpdotenv": "^3.6",
         "swiftmailer/swiftmailer": "^6.0",
-        "monolog/monolog": "^1.23",
+        "monolog/monolog": "^2.0",
         "nesbot/carbon": "^1.32",
         "respect/validation": "^1.1",
         "illuminate/database": "^5.6",

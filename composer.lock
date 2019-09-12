@@ -853,25 +853,28 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.3",
+            "version": "v6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4"
+                "reference": "5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8ddcb66ac10c392d3beb54829eef8ac1438595f4",
-                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a",
+                "reference": "5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a",
                 "shasum": ""
             },
             "require": {
                 "egulias/email-validator": "~2.0",
-                "php": ">=7.0.0"
+                "php": ">=7.0.0",
+                "symfony/polyfill-iconv": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.1",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
             },
             "suggest": {
                 "ext-intl": "Needed to support internationalized email addresses",
@@ -880,7 +883,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "6.2-dev"
                 }
             },
             "autoload": {
@@ -908,7 +911,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-09-11T07:12:52+00:00"
+            "time": "2019-04-21T09:21:45+00:00"
         },
         {
             "name": "symfony/console",
@@ -1147,6 +1150,65 @@
                 "ctype",
                 "polyfill",
                 "portable"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "symfony/polyfill-iconv",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-iconv.git",
+                "reference": "685968b11e61a347c18bf25db32effa478be610f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/685968b11e61a347c18bf25db32effa478be610f",
+                "reference": "685968b11e61a347c18bf25db32effa478be610f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-iconv": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Iconv extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "iconv",
+                "polyfill",
+                "portable",
+                "shim"
             ],
             "time": "2019-08-06T08:03:45+00:00"
         },

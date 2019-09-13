@@ -13,8 +13,7 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": "true",
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.0.0",
         "symfony/http-foundation": "^4.0",

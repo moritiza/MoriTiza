@@ -24,7 +24,7 @@ class InitCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $dotenv = new \Dotenv\Dotenv(dirname(dirname(dirname(__DIR__))));
+        $dotenv = \Dotenv\Dotenv::create(dirname(dirname(dirname(__DIR__))));
         $dotenv->load();
 
         $dbName = getenv('DB_DATABASE');
